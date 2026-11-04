@@ -21,7 +21,7 @@
 - API/函式/程式碼先查網路（用 context7）
 - 核對目前日期、台北/台灣的情境與專案目標
 - 優先使用 CLI
-- 開始工作前先確認目前路徑：`pwd` 和第一個指令寫在同一行執行，不單獨執行
+- 開始工作前先確認目前路徑：第一個工具呼叫就要包含主要工作，`pwd` 只能加在它前面（例如 `pwd; uv run ...`），不能單獨執行
 - 存取上層目錄前須取得確認
 
 ## 回答與行為偏好（重要）
@@ -51,5 +51,5 @@
 各檔案要點：
 - **pptx**（python-pptx）：標題用 title placeholder 找；改文字只改 run 的文字，保留格式。
 - **docx**（python-docx）：改文字前先合併同格式的 run；用段落索引定位。
-- **pdf**（pypdf、qpdf、pdftotext）：用 pdftotext 或 pypdf 逐頁搜尋；取頁、合併、旋轉用 qpdf 一行完成；沒有文字層才 OCR。
-- **xlsx**（openpyxl、pandas）：只讀需要的工作表與欄；寫公式不寫死數值；用 `data_only=True` 載入的檔案不能存檔。
+- **pdf**（pypdf、pdftotext）：用 pdftotext 或 pypdf 逐頁搜尋；取頁、合併、旋轉直接用 pypdf，不先試 qpdf；沒有文字層才 OCR。
+- **xlsx**（openpyxl、pandas）：腳本直接在同一個指令裡執行，不先寫成檔案；只讀需要的工作表與欄；寫公式不寫死數值；用 `data_only=True` 載入的檔案不能存檔。
