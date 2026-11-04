@@ -24,7 +24,7 @@
 | 提案簡報（15 頁） | [`簡報/中化智匯盃_做大做強.pptx`](簡報/中化智匯盃_做大做強.pptx) |
 | 心得（周子謙） | [`心得/心得_周子謙_20261028.md`](心得/心得_周子謙_20261028.md) |
 | Claude Code 使用者設定（個人習慣＋pptx、docx、pdf、xlsx 省 token 工具指令） | [`CLAUDE.md`](CLAUDE.md) |
-| 省 token 工具指令 A/B 測試規範（含測試腳本） | [`測試規範_省token.md`](測試規範_省token.md) |
+| 省 token 工具指令 A/B 測試規範（Claude 線與 GPT 線，含測試腳本） | [`測試規範_省token.md`](測試規範_省token.md) |
 | 省 token 方法庫（辦公檔案修改、寫作各 50 項，參考用） | [`省token方法庫_辦公與寫作.md`](省token方法庫_辦公與寫作.md) |
 
 ## 設計原則
